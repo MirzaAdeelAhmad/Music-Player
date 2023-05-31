@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project11 music player.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            
+            <img src="images/music.png" alt="">
+            <h1>Let Me Down Slowly</h1>
+            <p>Louis Fonsi Ft, Puerto Ricon</p>
+            <audio id="song">
+                <source src="audio/Let Me Down Slowly x Main Dhoondne Ko Zamaane Mein (Gravero Mashup) _ Full Version.mp3">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div class="button">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="button" onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlBtn"></i>
+                </div>
+                <div class="button">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="project11 music player.js"></script>
+    
+</body>
+</html>

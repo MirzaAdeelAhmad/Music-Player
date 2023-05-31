@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Mulish:wght@300&family=Noto+Sans:ital,wght@0,300;1,300;1,400&family=Nunito:wght@200&family=Outfit:wght@300&family=Poppins:wght@300&family=Space+Mono&family=Wix+Madefor+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.music-player{
+    width: 300px;
+    background-color: rgb(255, 192, 202);
+    height: 490px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.363);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 8px solid white;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+p{
+    font-size: 12px;
+}
+
+#progress{
+    width: 100%; 
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(240, 73, 151);
+    height: 6px;
+    margin: 30px 0px 20px 0px;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(240, 73, 151);
+    border: 6px solid white;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 73, 151);
+    margin-top: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.404);
+    cursor: pointer;
+}
+.button:nth-child(2){
+    transform: scale(1.4);
+    background-color: rgb(240, 73, 151);
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322);
+}
+
+
